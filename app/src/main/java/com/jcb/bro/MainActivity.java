@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.StrictMode;
@@ -85,7 +84,12 @@ public class MainActivity extends Activity
         int count = 0;
         try
         {
+            // Test Server
+            //URL url = new URL( "https://stage.api.sympoz.com/ws/resource/course/?start=" + start + "&limit=" + 10 + "&siteId=1&appId=99" );
+
+            //Production Server
             URL url = new URL( "https://api.sympoz.com/ws/resource/course/?start=" + start + "&limit=" + 10 + "&siteId=1&appId=99" );
+
             HttpURLConnection con = (HttpURLConnection) url
                     .openConnection();
             String result = readStream( con.getInputStream() );
@@ -205,9 +209,9 @@ public class MainActivity extends Activity
             title.setText( course.title );
             price.setText( course.price );
 
-            Bitmap bitmap = getBitmapFromURL( course.imageUrl );
+            //Bitmap bitmap = getBitmapFromURL( course.imageUrl );
 
-            image.setImageDrawable( new BitmapDrawable(bitmap) );
+            //image.setImageDrawable( new BitmapDrawable(bitmap) );
 
             return row;
         }
