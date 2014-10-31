@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.StrictMode;
@@ -209,9 +210,9 @@ public class MainActivity extends Activity
             title.setText( course.title );
             price.setText( course.price );
 
-            //Bitmap bitmap = getBitmapFromURL( course.imageUrl );
+            Bitmap bitmap = getBitmapFromURL( course.imageUrl );
 
-            //image.setImageDrawable( new BitmapDrawable(bitmap) );
+            image.setImageDrawable( new BitmapDrawable(bitmap) );
 
             return row;
         }
