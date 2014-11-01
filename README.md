@@ -7,5 +7,5 @@ This is what he came back with. Even though he was an unpaid intern we fired Joe
 
 If you have any questions on what to do just send us an email, but how to do it is entirely up to you.
 
-This might not matter, but when the desingers get back from the hipster convention the first thing we're going to do is implement sorting and filtering. For example, sort all the courses in the view by price or filter out the paid ones and only display free courses. So you might want to make sure whatever you do makes it easier or at least not harder to implement those features.
+This might not matter, but when the designers get back from the hipster convention the first thing we're going to do is implement sorting and filtering. For example, sort all the courses in the view by price or filter out the paid ones and only display free courses. So you might want to make sure whatever you do makes it easier or at least not harder to implement those features.
 
