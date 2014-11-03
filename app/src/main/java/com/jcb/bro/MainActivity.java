@@ -52,7 +52,7 @@ public class MainActivity extends Activity
 
         listView.setAdapter( adapter );
 
-        getMore( 0, 30 );
+        getMore( 0, 10 );
 
 
     }
